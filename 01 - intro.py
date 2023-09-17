@@ -21,7 +21,7 @@ for col in df.columns:
 print(f"Q4 = {df.ocean_proximity.nunique()}")
 
 x = round(df[df.ocean_proximity == "NEAR BAY"]["median_house_value"].mean(), 0)
-print(f"QA5 = {x}")
+print(f"Q5 = {x}")
 
 print(f"Q6 = {round(df.total_bedrooms.mean(), 4)}")
 df["total_bedrooms"].fillna(df["total_bedrooms"].mean(), inplace=True)
